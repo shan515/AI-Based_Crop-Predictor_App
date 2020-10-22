@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 from scipy.sparse.construct import random
 from sklearn.model_selection import train_test_split
+import joblib
 
 #Reading the csv file
 data=pd.read_csv('../dataset/final_dataset.csv')
@@ -48,3 +49,6 @@ from sklearn.metrics import accuracy_score
 # Finding the accuracy of the model
 a=accuracy_score(np.argmax(y_test,axis=1),np.argmax(pred,axis=1))
 print("The accuracy of this model is: ", a*100)
+
+# Saving the model using joblib
+joblib.dump(clf,'saved_model.sav')
