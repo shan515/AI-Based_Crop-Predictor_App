@@ -16,7 +16,6 @@ def index():
 @app.route('/predict', methods=['POST'])
 def predict():
     area = request.form.get('area')
-    temp = request.form.get('temp')
     sowT = request.form.get('sowT')
     pot = request.form.get('potassium')
     nit = request.form.get('nitrogen')
@@ -32,8 +31,11 @@ def predict():
     # temps stores the predicted temperature
     latitude = str(request.form.get('latitude'))
     longitude = str(request.form.get('longitude'))
-    URL = "https://climateknowledgeportal.worldbank.org/api/data/get-download-data/projection/mavg/tas/rcp26/2020_2039/" + \
+    
+    URL = "https://climateknowledgeportal.worldbank.org/api/data/get-download-data/projection/mavg/"+param+"/rcp26/2020_2039/" + \
         latitude+"$cckp$"+longitude + "/"+latitude + "$cckp$"+longitude + ""
+    
+    param = "tas"
     resp = requests.get(url=URL)
     decoded = resp.content.decode("utf-8")
     cr = csv.reader(decoded.splitlines(), delimiter=',')
@@ -46,6 +48,20 @@ def predict():
             break
         temps.append(row[0])
     print(temps)
+
+    param = "pr"
+    resp = requests.get(url=URL)
+    decoded = resp.content.decode("utf-8")
+    cr = csv.reader(decoded.splitlines(), delimiter=',')
+    my_list = list(cr)
+    rainfall = []
+    for index, row in enumerate(my_list):
+        if index == 0:
+            continue
+        if index > 13:
+            break
+        rainfall.append(row[0])
+    print(rainfall)
 
     # Do the prediction here using Classifier clf.
 
