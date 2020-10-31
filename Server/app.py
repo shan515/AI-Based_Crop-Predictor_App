@@ -5,6 +5,7 @@ import joblib
 import csv
 import requests
 import json
+import pickle
 app = Flask(__name__)
 
 
@@ -64,6 +65,14 @@ def predict():
         rainfall.append(row[0])
     print(rainfall)
 
+    # Getting the current temperature (if Current=true in Input)
+    current_weather_url = "http://api.openweathermap.org/data/2.5/weather?lat="+latitude +"&lon="+longitude +"&APPID=b9bb7acaa4566f8f7de584f90c2b12c2"
+    resp = requests.get(current_weather_url)
+    decoded = resp.content.decode("utf-8")
+    resp = json.loads(decoded)
+    current_temp = resp["main"]["temp"]
+    print(current_temp)
+
     # Do the prediction here using Classifier clf.
 
     # Making the response message
@@ -84,4 +93,13 @@ def predict():
 
 if __name__ == '__main__':
     clf = joblib.load('../Models/saved_model.sav')
+    
+    f = open('../dataset/ground_water_dic.pkl','rb')
+    ground_water = pickle.load(f)
+    f.close()
+    
+    f = open('../dataset/max_area_groundwater.pkl','rb')
+    max_area = pickle.load(f)
+    f.close()
+    
     app.run()
