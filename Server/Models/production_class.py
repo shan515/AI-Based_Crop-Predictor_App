@@ -1,4 +1,6 @@
-crops = ["arhar/tur","bajra","barley","coriander","cotton_lint","cowpea_lobia","dry chillies","garlic",
+import pickle
+
+crops = ["arhar/tur","bajra","barley","coriander","cotton_lint","cowpea_lobia","dry_chillies","garlic",
 "ginger","gram","groundnut","jowar","linseed","maize-k","maize-r","masoor","moong_green_gram","onion","peas_and_beans_pulses",
 "potato","ragi","rapeseed &mustard","rice","safflower","sugarcane","sunflower","turmeric","urad","wheat"]
 
@@ -9,7 +11,7 @@ crops_rates = {"arhar/tur":6000,
 "coriander":0,
 "cotton_lint":5515,
 "cowpea_lobia":0,
-"dry chillies":0,
+"dry_chillies":0,
 "garlic":0,
 "ginger":0,
 "gram":4875,
@@ -33,17 +35,14 @@ crops_rates = {"arhar/tur":6000,
 "urad":6000,
 "wheat":1925}
 
-
-
-import pickle
 #filepath = '/home/sravanchittupalli/konnoha/clones/Lets_HackIT/Models/production/'
-filename = "production_weights.sav"
+#filename = "production_weights.sav"
 #pickle.dump(model_list, open(filepath+filename, 'wb'))
 
 
 
 class Production:
-    def __init__(self,crop,area):
+    def __init__(self,crop,area,filename):
         self.prod_arr=[]
         self.area=area
         self.crop=crop
@@ -65,20 +64,12 @@ class Production:
         for c in self.crop:
             self.prod_arr.append(self.single_production_price(c))
             self.display(c)
-         
-    
 
-#initialize the model
-crop=['bajra','rice','ragi','sugarcane']
-model=Production(crop,200) 
-
-
-
+# Crop Price Prediction
+crop = ['dry_chillies', 'coriander', 'onion']
+area = 200
+production_weight_path = '/home/sravanchittupalli/konnoha/clones/Lets_HackIT/Server/Models/weights/production_weights.sav'
+price_model = Production(crop, area, production_weight_path) 
 #calculate the production and price and also display
-model.calculate_production_price() 
-
-
-
-#prediction for single crop [production,price]
-model.single_production_price('rice')
-
+price_model.calculate_production_price() 
+print(price_model.prod_arr)
