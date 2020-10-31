@@ -8,16 +8,17 @@ from torch import nn
 debug = False
 
 # kharif crops list
-k_crops = ["arhar/tur","bajra","cotton(lint)","groundnut","maize-k","moong(green gram)","ragi",
-"rice","sunflower","urad","cowpea(lobia)","ginger"]
+k_crops = ["arhar/tur","bajra","cotton_lint","groundnut","maize-k","moong_green_gram)","ragi",
+"rice","sunflower","urad","cowpea_lobia","ginger"]
 
 # rabi crops list
 r_crops = ["barley","gram","jowar","linseed","maize-r","masoor",
-"peas & beans (pulses)","rapeseed &mustard","safflower",
+"peas_and_beans_pulses","rapeseed &mustard","safflower",
 "wheat","garlic"]
 
 # zaid crops list
-z_crops = ["coriander","dry chillies","onion","potato","sugarcane","turmeric"]
+z_crops = ["coriander","dry_chillies","onion","potato","sugarcane","turmeric"]
+
 
 
 # KHARIF neural network parameteres
@@ -98,24 +99,4 @@ class crop_model(nn.Module):
 
 
 
-# example parameteres
-path = '' # weight file
-parameteres = torch.from_numpy(np.array([[30, 7, 65, 25, 35, 40, 15, 0, 1, 0 , 1, 0]], dtype='float32'))
-
-# create model instance
-model = crop_model('kharif')
-
-#load weights
-model.load_weights(path)
-if debug:
-    print(list(model.parameters()))
-
-#get predictions
-pred = model.get_predictions(parameteres)
-pred = pred.detach().numpy()
-if debug:
-    print(pred)
-
-model.get_top_n_predictions(pred, 3)
-print(model.max_pred_array)
 
