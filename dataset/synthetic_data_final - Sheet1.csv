@@ -1,0 +1,30 @@
+Crop,Temperature range,Ph range,Rainfall (cm),Sowing Temperature,Harvesting Temperature,Phosphorus,Nitrogen,Potassium ,Season
+Maize(Kharif),25 - 30 C,5.5 - 7.5,60  - 110 cm,25 - 30 C,30 - 35 C,12-24,35-50,8-12,kharif
+Maize(Rabi),21 - 27 C,5.5 - 7.5,60 - 300 cm,21 - 27 C,25 - 30 C,70,24,12,rabi
+Moong(Green Gram),25 - 35 C,6.2 - 7.2,60 - 90 cm,25 - 30 C,30 - 35 C ,16,5,0,kharif
+Urad,15 - 30 C,6.5 - 7.8,50 - 75cm,21 - 27 C,18 - 25 C,5,10,0,kharif
+Groundnut,20 - 30 C,6.5 - 7.0,50 - 75 cm,25 - 35 C,18 - 25 C,6,8,10,kharif
+Sugarcane,20 -  30 C,5.0 - 8.5,75 - 150 cm,20 - 25 C,20 - 30 C,90,0,0,rabi
+Wheat,21 - 26 C,6.0 - 7.0,25 - 75 cm,18 - 22 C,20 - 25 C,50,25,12,rabi
+Rapeseed &Mustard,22 - 25 C,6.0 - 7.5,25 - 40 cm,20 - 22 C,28 - 30 C,25,8,0,rabi
+Arhar/Tur,30 - 35 C,6.5 - 7.5,60 - 65 cm,25 - 33 C,35 - 40 C,16,6,12,kharif
+Gram,24 - 30 C,5.5 - 7.0,60 - 90 cm,24 - 28 C,30 - 32 C,50,20,0,kharif
+Jowar,25 - 32 C,6.0 - 7.5,30 - 65 cm,25 - 30 C,16 - 18 C,8,20,10,rabi
+Onion,21 - 26 C,6.0 - 7.0,65 - 75 cm,18 - 20 C,25 - 30 C,40,20,20,kharif
+Potato,14 - 25 C,5.0 - 7.0,30 - 50 cm,15 - 25 C,14 - 20 C,75,25,25,rabi
+Chillies,18 - 40 C,6.0 - 7.0,63 - 150 cm,35 - 40 C,35 - 40 C,12,25,12,rabi
+Sunflower,20 - 25 C,6.5 - 8.0,50 - 70 cm,20 - 25 C,35 - 37 C,24,12,0,kharif
+Bajra,15 - 20 C,5.8 - 6.5,40 - 60 cm,30 - 32 C,20 - 25 C,40,30,0,kharif
+Peas & beans (Pulses),15 - 25 C,6.0 - 6.8,60 - 150 cm,22 - 25 C,28 - 30 C,25,40,0,rabi
+Cotton(lint),15 - 35 C,6.0 - 8.0,55 - 100 cm,25 - 35 C,15 - 25 C,30,12,0,kharif
+Barley,12-  25 C,6.0 - 8.5,80 - 110cm,12 - 16 C,30 - 32 C,12,25,6,rabi
+Coriander,15 - 28 C,8.0 - 10,7.5 - 10 cm,22 - 28 C,15 - 25 C,40,0,0,rabi
+Cowpea(lobia),22 - 35 C,5.5 - 6.5,75 - 110 cm,22 - 28 C,30 - 35 C,22,7.5,0,kharif
+Garlic,10 - 30 C,6.0 - 7.0,60 - 70 cm,25 - 30 C,10 - 15 C,50,25,0,rabi
+Linseed,21 - 26 C,5.0 - 7.0,45 - 75 cm,20 - 21 C,30 - 31 C,25,16,0,rabi
+Masoor,18 - 24 C,6.5 - 7.5,90 - 100 cm,18 - 20 C,22 - 24 C,8,5,0,rabi
+Ragi,20 - 34 C,4.5 - 8.0,90 - 110cm,30 - 34 C,20 - 30 C,12,25,12,kharif
+Safflower,24 - 32 C,6.0 - 7.0,60 - 90 cm,15 - 18 C,32 - 35 C,0,16,0,rabi
+Turmeric,24 - 28 C,4.5 - 7.5,150 - 300 cm,25 - 34 C,20 - 22 C,10,10,10,Kharif
+Ginger,12 - 35 C,6.0 - 6.5 ,130 - 160 cm,30 - 35 C,25 - 33 C,25,10,10,kharif
+Rice,16 - 30 C,5.0 - 9.5,10 - 20 cm,20 - 30 C,16 - 27 C,50,12,12,kharif
