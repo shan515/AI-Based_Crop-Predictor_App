@@ -64,12 +64,3 @@ class Production:
         for c in self.crop:
             self.prod_arr.append(self.single_production_price(c))
             self.display(c)
-
-# Crop Price Prediction
-crop = ['dry_chillies', 'coriander', 'onion']
-area = 200
-production_weight_path = '/home/sravanchittupalli/konnoha/clones/Lets_HackIT/Server/Models/weights/production_weights.sav'
-price_model = Production(crop, area, production_weight_path) 
-#calculate the production and price and also display
-price_model.calculate_production_price() 
-print(price_model.prod_arr)
