@@ -32,10 +32,11 @@ def predict():
     latitude = str(request.form.get('latitude'))
     longitude = str(request.form.get('longitude'))
     
-    URL = "https://climateknowledgeportal.worldbank.org/api/data/get-download-data/projection/mavg/"+param+"/rcp26/2020_2039/" + \
+    param = "tas"
+    URL = "https://climateknowledgeportal.worldbank.org/api/data/get-download-data/projection/mavg/"+ param +"/rcp26/2020_2039/" + \
         latitude+"$cckp$"+longitude + "/"+latitude + "$cckp$"+longitude + ""
     
-    param = "tas"
+    
     resp = requests.get(url=URL)
     decoded = resp.content.decode("utf-8")
     cr = csv.reader(decoded.splitlines(), delimiter=',')
