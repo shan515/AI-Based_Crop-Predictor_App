@@ -67,6 +67,10 @@ The problem statement focuses on promoting crop recomendation/rotating to help f
 - Returns a JSON for predicted crop with probability.   
 
 
+### Additional Output (Auto-Genereated)  
+![PDF File of Output](https://github.com/shan515/Lets_HackIT/blob/images/assets/Arhar_Tur_eng.pdf)
+
+
   
       
       
