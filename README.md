@@ -54,10 +54,19 @@ The problem statement focuses on promoting crop recomendation/rotating to help f
     ![](https://github.com/shan515/Lets_HackIT/blob/images/assets/WhatsApp%20Image%202020-11-01%20at%207.24.56%20AM.jpeg)
 
 
-### Backend of app
 
 
-### Deployement on oracle cloud
+
+### Deployement (Backend)    
+- Python Flask Server  
+
+- Exposes a route for Predictions (/predict)  
+
+- External API calls for - Current/Forecasted Weather and Rainfall  
+
+- Returns a JSON for predicted crop with probability.   
+
+
   
       
       
