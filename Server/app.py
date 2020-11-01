@@ -87,24 +87,25 @@ def index():
 
 @app.route('/predict', methods=['POST'])
 def predict():
-    area = request.form.get('area')
-    potassium = request.form.get('potassium')
-    nitrogen = request.form.get('nitrogen')
-    phosphorous = request.form.get('phosphorous')
-    ph = request.form.get('ph')
-    crop_season = request.form.get('crop_season')
-    current_crop = request.form.get('current_planted_crop')
-    predict_month = request.form.get('predict_month')
-    is_current = request.form.get('is_current')
-    soil_type = request.form.get('soil_type')
+    content = request.json[0]
+    area = content['area']
+    potassium = content['potassium']
+    nitrogen = content['nitrogen']
+    phosphorous = content['phosphorous']
+    ph = content['ph']
+    crop_season = content['crop_season']
+    current_crop = content['current_planted_crop']
+    predict_month = content['predict_month']
+    is_current = content['is_current']
+    soil_type = content['soil_type']
 
     # Use this API for finding data using latitudes and Longitudes
     # https://climateknowledgeportal.worldbank.org/api/data/get-download-data/projection/mavg/tas/rcp26/2020_2039/21.1458$cckp$79.0882/21.1458$cckp$79.0882
     # temps stores the predicted temperature
-    latitude = str(request.form.get('lat'))
-    longitude = str(request.form.get('lng'))
-    district = (request.form.get('district')).upper()
-    state = (request.form.get('state')).upper()
+    latitude = content['lat']
+    longitude = content['lng']
+    district = (content['district']).upper()
+    state = (content['state']).upper()
     
     param = "tas"
     URL = "https://climateknowledgeportal.worldbank.org/api/data/get-download-data/projection/mavg/"+ param +"/rcp26/2020_2039/" + \
@@ -245,4 +246,4 @@ if __name__ == '__main__':
     max_area = pickle.load(f)
     f.close()
     
-    app.run()
+    app.run(host="instance-flask-app2",port=int("5000"),debug=True) 
