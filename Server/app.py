@@ -77,8 +77,8 @@ def get_soil(soil_type):
         
 
 # AI/ML parameteres default
-nn_weight_path = '/home/sravanchittupalli/konnoha/clones/Lets_HackIT/Server/Models/weights/kharif_crops_final.pth'
-production_weight_path = '/home/sravanchittupalli/konnoha/clones/Lets_HackIT/Server/Models/weights/production_weights.sav'
+nn_weight_path = 'Models/weights/kharif_crops_final.pth'
+production_weight_path = 'Models/weights/production_weights.sav'
 
 @app.route('/', methods=['GET'])
 def index():
@@ -151,13 +151,13 @@ def predict():
     # Do the prediction here using Classifier clf.
     print(crop_season)
     if(crop_season == 'kharif'):
-        nn_weight_path = '/home/sravanchittupalli/konnoha/clones/Lets_HackIT/Server/Models/weights/kharif_crops_final.pth'
+        nn_weight_path = 'Models/weights/kharif_crops_final.pth'
     elif(crop_season == 'rabi'):
-        nn_weight_path = '/home/sravanchittupalli/konnoha/clones/Lets_HackIT/Server/Models/weights/rabi_crops_final.pth'
+        nn_weight_path = 'Models/weights/rabi_crops_final.pth'
     elif(crop_season == 'zaid'):
-        nn_weight_path = '/home/sravanchittupalli/konnoha/clones/Lets_HackIT/Server/Models/weights/zaid_crops_final.pth'
+        nn_weight_path = 'Models/weights/zaid_crops_final.pth'
     
-    production_weight_path = '/home/sravanchittupalli/konnoha/clones/Lets_HackIT/Server/Models/weights/production_weights.sav'
+    production_weight_path = 'Models/weights/production_weights.sav'
 
     # get avg values
     temp_avg = get_avg(temps, predict_month)
