@@ -46,15 +46,18 @@ class crop_model(nn.Module):
         super().__init__()
         self.season = season
 
-        if(season == 'kharif'):
+        if(season == 'Kharif'):
+            df = pd.read_csv('kharif_all_crops.csv')
             self.input = nn.Linear(k_input_nodes, k_hidden1_nodes)
             self.hidden1 = nn.Linear(k_hidden1_nodes, k_hidden2_nodes)
             self.hidden2 = nn.Linear(k_hidden2_nodes, k_output_nodes)
-        if(season == 'rabi'):
+        if(season == 'Rabi'):
+            df = pd.read_csv('rabi_crops.csv')
             self.input = nn.Linear(r_input_nodes, r_hidden1_nodes)
             self.hidden1 = nn.Linear(r_hidden1_nodes, r_hidden2_nodes)
             self.hidden2 = nn.Linear(r_hidden2_nodes, r_output_nodes)
-        if(season == 'zaid'):
+        if(season == 'Zaid'):
+            df = pd.read_csv('zaid_crops.csv')
             self.input = nn.Linear(z_input_nodes, z_hidden1_nodes)
             self.hidden1 = nn.Linear(z_hidden1_nodes, z_hidden2_nodes)
             self.hidden2 = nn.Linear(z_hidden2_nodes, z_output_nodes)
@@ -64,6 +67,15 @@ class crop_model(nn.Module):
         self.relu = nn.ReLU()
 
         self.max_pred_array = []
+
+        
+        np_inputs = df.to_numpy()
+        inputs = np_inputs[:, 0:12]
+        inputs = np.array(inputs, dtype='float32')
+
+        from sklearn.preprocessing import StandardScaler
+        self.scaler = StandardScaler()
+        self.scaler.fit(inputs)
 
     def forward(self, x):
         x = self.input(x)
@@ -78,7 +90,7 @@ class crop_model(nn.Module):
         self.load_state_dict(torch.load(path))
 
     def get_predictions(self, parameteres):
-        return self(parameteres)
+        return self(self.scaler.transform(parameteres))
 
     def get_top_n_predictions(self, pred, n):
         for i in pred:
@@ -90,11 +102,11 @@ class crop_model(nn.Module):
                         temp = i[k]
                         temp_index = k
                 i[temp_index] = -1
-                if(self.season == 'kharif'):
+                if(self.season == 'Kharif'):
                     self.max_pred_array.append([temp*100, k_crops[temp_index]])
-                if(self.season == 'rabi'):
+                if(self.season == 'Rabi'):
                     self.max_pred_array.append([temp*100, r_crops[temp_index]])
-                if(self.season == 'zaid'):
+                if(self.season == 'Zaid'):
                     self.max_pred_array.append([temp*100, z_crops[temp_index]])
 
 

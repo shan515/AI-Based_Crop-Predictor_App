@@ -150,11 +150,11 @@ def predict():
 
     # Do the prediction here using Classifier clf.
     print(crop_season)
-    if(crop_season == 'kharif'):
+    if(crop_season == 'Kharif'):
         nn_weight_path = 'Models/weights/kharif_crops_final.pth'
-    elif(crop_season == 'rabi'):
+    elif(crop_season == 'Rabi'):
         nn_weight_path = 'Models/weights/rabi_crops_final.pth'
-    elif(crop_season == 'zaid'):
+    elif(crop_season == 'Zaid'):
         nn_weight_path = 'Models/weights/zaid_crops_final.pth'
     
     production_weight_path = 'Models/weights/production_weights.sav'
