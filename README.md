@@ -5,7 +5,7 @@ The problem statement focuses on promoting crop recomendation/rotating to help f
 
 
 ## Workflow of the entire solution  
-![](https://github.com/shan515/Lets_HackIT/blob/images/assets/process.png)  
+![](https://github.com/shan515/Lets_HackIT/blob/images/assets/process-2.png)  
                            
 ## The solution is divided into 5 major aspects  
   - [Front end](#front-end)
