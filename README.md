@@ -9,14 +9,49 @@ The problem statement focuses on promoting crop recomendation/rotating to help f
                            
 ## The solution is divided into 5 major aspects  
   - [Front end](#front-end)
+  - [Data analysis and generation](#data-analysis-and-generation)
   - [AI/ML computation/prediction](#ai/ml-computation/prediction)
   - [Backend of app](#backend-of-app)
   - [Deployement on oracle cloud](#deployment-on-oracle-cloud)
   
 ### Front End  
-
-
-### AI/ML computation/prediction
+- User Friendly  
+  -  SELECT THE MONTH/SEASON 
+  -  TYPE OF SOIL
+  -  AREA OF FARM 
+  -  BILINGUAL SUPPORT IN ENGLISH AND HINDI.  
+ - Location  
+   - GPS TO GET LATITUDE AND LONGITUDE AUTOMATICALLY  
+ - IOT Sensor  
+   - N,P,K  
+   - Soil pH  
+ - Prediction  
+   - crop + Prediction  
+   - Yield  
+   - PDF containing the information of predicted crop  
+ - Connect  
+   - Agricultural agencies  
+   - Agricultural resources/links  
+ - History  
+   - List and information of previously grown crops  
+   
+   
+ ### Data Analysis and Generation  
+ - The data required for this model was a combination of data from:  
+   - Kaggle : State Name, District Name, Season of cropping , Area, Production, Crop.  
+   - Synthetic Data : Teperature range, Sowing temperature, Harvesting Temperature, pH, Nitrogen-Phosphorous-Potassium, Soil type , Water resource.  
+   - Forecast Data : Weather/rainfall forecast data , Ground water and Irrigation.  
+   ![](https://github.com/shan515/Lets_HackIT/blob/images/assets/sns.png)
+ 
+### AI/ML computation/prediction  
+  NEURAL NETWORK PROVIDES A MORE ACCURATE WAY OF DEALING WITH DATASETS WHERE THERE ARE MANY INTERSECTIONS LIKE THE ONE ON WHICH WE ARE WORKING ON.  
+  - The Neural Network consists of  
+    - 12 input parameteres  
+    - 2 Hidden layers each having 64 units  
+    - Softmax function at the output  
+    - The model attained an accuracy of ariund 99.3% as shown below:  
+    
+    ![](https://github.com/shan515/Lets_HackIT/blob/images/assets/WhatsApp%20Image%202020-11-01%20at%207.24.56%20AM.jpeg)
 
 
 ### Backend of app
