@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.predict.PredictFragmentHindi">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:fontFamily="@font/exo_2_bold"
+        android:text="फसल की भविष्यवाणी"
+        android:textColor="@color/dark_green"
+        android:textSize="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+    <ImageView
+        android:id="@+id/image_farmer"
+        android:layout_width="141dp"
+        android:layout_height="110dp"
+        android:src="@drawable/farmer_face"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"></ImageView>
+
+    <TextView
+        android:id="@+id/label_month_to_predict_crop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/exo_2_bold"
+        android:textColor="@color/farm_mud"
+        android:textSize="19dp"
+        android:text="फसल का मौसम?"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_farmer"></TextView>
+
+    <Spinner
+        android:id="@+id/spinner_month_to_predict_crop"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:entries="@array/month_hindi"
+        android:prompt="@string/month_selection"
+
+        android:theme="@style/SpinnerStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.078"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_month_to_predict_crop"></Spinner>
+
+    <TextView
+        android:layout_width="30dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="OR"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/spinner_season_to_predict_crop"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/spinner_month_to_predict_crop"
+        app:layout_constraintTop_toBottomOf="@+id/label_month_to_predict_crop">
+
+    </TextView>
+
+    <Spinner
+        android:id="@+id/spinner_season_to_predict_crop"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:entries="@array/crop_seasons_hindi"
+        android:prompt="@string/crop_seasons_prompt_eng"
+        android:theme="@style/SpinnerStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.879"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_month_to_predict_crop"></Spinner>
+
+    <TextView
+        android:id="@+id/label_current_crop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/exo_2_bold"
+        android:text="Which crop was last planted?"
+        android:textColor="@color/farm_mud"
+        android:textSize="19dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.143"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_season_to_predict_crop"></TextView>
+
+    <Spinner
+        android:id="@+id/spinner_current_crop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:entries="@array/crop_eng"
+        android:prompt="@string/crop_seasons_prompt_eng"
+        android:theme="@style/SpinnerStyle"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_current_crop"></Spinner>
+
+    <TextView
+        android:id="@+id/label_farm_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/exo_2_bold"
+        android:text="खेत का क्षेत्रफल?"
+        android:textColor="@color/farm_mud"
+        android:textSize="19dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_current_crop"></TextView>
+
+    <EditText
+        android:id="@+id/edit_farm_area"
+        android:layout_width="125dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:hint="एकड़ में"
+        android:inputType="numberDecimal"
+        android:lines="1"
+        android:textColor="@color/grey"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.104"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_farm_area"></EditText>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="61dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="एकड़"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/edit_farm_area"
+        app:layout_constraintTop_toBottomOf="@+id/label_farm_area"></TextView>
+
+
+    <Button
+        android:id="@+id/button_language_switch"
+        android:layout_width="58dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ic_language_swap"
+        android:backgroundTint="@color/orange_yellow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.943"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_next_page_1"
+        android:layout_width="87dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="63dp"
+        android:background="@drawable/ic_next_arrow"
+        android:backgroundTint="@color/bottom_nav_color"
+        android:theme="@style/NextPrevPageTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.938"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:drawableLeft="@drawable/ic_location"
+        android:text="Location"
+        android:id="@+id/label_location"
+        android:textColor="@color/grey"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/exo_2_bold"
+        android:text="मिट्टी का प्रकार?"
+        android:textColor="@color/farm_mud"
+        android:textSize="19dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_farm_area"></TextView>
+
+    <Spinner
+        android:id="@+id/spinner_soil_type"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
+        android:entries="@array/soil_type_hindi"
+        android:prompt="@string/soil_type_prompt"
+        android:theme="@style/SpinnerStyle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

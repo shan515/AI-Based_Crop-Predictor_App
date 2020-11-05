@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:forceDarkAllowed="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashActivity">
+
+
+    <ImageView
+        android:id="@+id/animate_image"
+        android:layout_width="175dp"
+            android:layout_height="169dp"
+            android:layout_alignParentBottom="true"
+            android:adjustViewBounds="true"
+            android:paddingBottom="30dp"
+            android:src="@drawable/animate_splash"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.105"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.153" />
+
+    <TextView
+        android:id="@+id/label_app"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:gravity="center"
+        android:text="Crop Predictor!"
+        android:textColor="@color/dark_green"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/animate_image"></TextView>
+
+    <TextView
+        android:id="@+id/label_loading"
+        android:layout_width="414dp"
+        android:layout_height="29dp"
+        android:gravity="center"
+        android:text="loading ..."
+        android:textColor="@color/farm_mud"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/image_base_splash"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_app"
+        app:layout_constraintVertical_bias="0.355"></TextView>
+
+    <ImageView
+        android:id="@+id/image_base_splash"
+        android:layout_width="413dp"
+        android:layout_height="250dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/splash_image_base"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </ImageView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

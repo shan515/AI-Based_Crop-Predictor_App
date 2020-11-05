@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/info_frag_titlebar"
+    android:background="@drawable/gradient_amber"
+    tools:context=".ui.other.InformationExchangeFragment">
+
+    <Button
+        android:id="@+id/button_kvk"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="144dp"
+        android:background="@drawable/other_buttons"
+        android:fontFamily="@font/exo_2_bold"
+        android:padding="20dp"
+        android:text="Krishi Vigyan Kendra (KVK"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:theme="@style/button_connect_to_links"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></Button>
+
+    <Button
+        android:id="@+id/button_icars"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/other_buttons"
+        android:fontFamily="@font/exo_2_bold"
+        android:lines="1"
+        android:padding="20dp"
+        android:text="Indian Council Of Agricultural Research (ICRS)"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:theme="@style/button_connect_to_links"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_kvk"></Button>
+
+    <Button
+        android:id="@+id/button_sau"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/other_buttons"
+        android:fontFamily="@font/exo_2_bold"
+        android:lines="1"
+        android:padding="20dp"
+        android:text="South Asian University (SAU)"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:theme="@style/button_connect_to_links"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_icars"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="36dp"
+        android:src="@drawable/connect"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"></ImageView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:forceDarkAllowed="false"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView"-->
+<!--        android:layout_width="130dp"-->
+<!--        android:layout_height="130dp"-->
+<!--        android:layout_marginTop="52dp"-->
+<!--        android:foregroundGravity="center"-->
+<!--        android:src="@drawable/india"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.498"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+
+<!--    </ImageView>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/label_location"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="48dp"-->
+<!--        android:fontFamily="@font/exo_2_bold"-->
+<!--        android:text="LOCATION: "-->
+<!--        android:textColor="@color/dark_green"-->
+<!--        android:textSize="28dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/imageView">-->
+
+<!--    </TextView>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/label_state"-->
+<!--        android:layout_width="98dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="32dp"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--        android:fontFamily="@font/exo_2_bold"-->
+<!--        android:text="State :"-->
+<!--        android:textColor="@color/farm_mud"-->
+<!--        android:textSize="23dp"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/spinner_state"-->
+<!--        app:layout_constraintHorizontal_bias="0.514"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/label_location"></TextView>-->
+
+<!--    <Spinner-->
+<!--        android:id="@+id/spinner_district"-->
+<!--        android:layout_width="195dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="24dp"-->
+<!--        android:layout_marginEnd="56dp"-->
+<!--        android:entries="@array/state_eng"-->
+<!--        android:paddingBottom="3dp"-->
+<!--        android:prompt="@string/state_prompt"-->
+<!--        android:theme="@style/SpinnerStyle"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/spinner_state">-->
+
+<!--    </Spinner>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/label_district"-->
+<!--        android:layout_width="98dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="32dp"-->
+<!--        android:layout_marginTop="24dp"-->
+<!--        android:fontFamily="@font/exo_2_bold"-->
+<!--        android:text="District :"-->
+<!--        android:textColor="@color/farm_mud"-->
+<!--        android:textSize="23dp"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/spinner_state"-->
+<!--        app:layout_constraintHorizontal_bias="0.514"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/label_state"></TextView>-->
+
+<!--    <Spinner-->
+<!--        android:id="@+id/spinner_state"-->
+<!--        android:layout_width="195dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--        android:layout_marginEnd="56dp"-->
+<!--        android:entries="@array/state_eng"-->
+<!--        android:paddingBottom="3dp"-->
+<!--        android:prompt="@string/state_prompt"-->
+<!--        android:theme="@style/SpinnerStyle"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/label_location">-->
+
+<!--    </Spinner>-->
+
+<!--    <Button-->
+<!--        android:id="@+id/button_next_page"-->
+<!--        android:layout_width="87dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_marginBottom="63dp"-->
+<!--        android:background="@drawable/ic_next_arrow"-->
+<!--        android:backgroundTint="@color/bottom_nav_color"-->
+<!--        android:theme="@style/bottom_nav"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.938"-->
+<!--        app:layout_constraintStart_toStartOf="parent">-->
+
+<!--    </Button>-->
+
+<!--    <Button-->
+<!--        android:id="@+id/button_language_switch"-->
+<!--        android:layout_width="58dp"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:background="@drawable/ic_language_swap"-->
+<!--        android:backgroundTint="@color/orange_yellow"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.943"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

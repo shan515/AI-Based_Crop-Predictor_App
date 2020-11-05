@@ -1,0 +1,15 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<animation-list xmlns:android = "http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable = "@drawable/purple_gradient"
+        android:duration = "1000" />
+    <item
+        android:drawable = "@drawable/gradient_amber"
+        android:duration = "1000" />
+    <item
+        android:drawable = "@drawable/gradient_green"
+        android:duration = "1000" />
+    <item
+        android:drawable = "@drawable/blue_gradient"
+        android:duration = "1000" />
+</animation-list>

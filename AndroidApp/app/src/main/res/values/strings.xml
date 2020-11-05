@@ -1,0 +1,872 @@
+<resources>
+    <string name="app_name">CropPrediction</string>
+
+    <string name="crop_seasons_prompt_eng">Choose crop season</string>
+    <string name="crop_seasons_prompt_hindi">फसल का मौसम चुनें</string>
+    <string-array name="crop_seasons_eng">
+        <item>Kharif</item>
+        <item>Rabi</item>
+        <item>Zaid</item>
+    </string-array>
+
+    <string-array name="crop_seasons_hindi">
+        <item>खरीफ</item>
+        <item>रबी</item>
+        <item>जायद</item>
+    </string-array>
+
+    <string name="crop_season_prompt_speech">Crop Season</string>
+    <string name="farm_area_prompt_speech">Area of farm (in acres)</string>
+
+    <string name="speech_prompt">Farm Area??</string>
+    <string name="no_speech">Device does not support this feature</string>
+
+    <string name="month_selection">Choose month</string>
+    <string-array name="month_eng">
+        <item>JAN</item>
+        <item>FEB</item>
+        <item>MAR</item>
+        <item>APR</item>
+        <item>MAY</item>
+        <item>JUN</item>
+        <item>JUL</item>
+        <item>AUG</item>
+        <item>SEP</item>
+        <item>OCT</item>
+        <item>NOV</item>
+        <item>DEC</item>
+    </string-array>
+
+
+    <string-array name="month_hindi">
+        <item>जनवरी</item>
+        <item>फ़रवरी</item>
+        <item>मार्च</item>
+        <item>अप्रैल</item>
+        <item>मई</item>
+        <item>जून</item>
+        <item>जुलाई</item>
+        <item>अगस्त</item>
+        <item>सितम्बर</item>
+        <item>अक्टूबर</item>
+        <item>नवम्बर</item>
+        <item>दिसम्बर</item>
+    </string-array>
+
+
+    <string name="crop_selection">Choose crop</string>
+    <string-array name="crop_eng">
+        <item>Maize(Rabi)</item>
+        <item>Moong(Green Gram)</item>
+        <item>Maize(Kharif)</item>
+        <item>Urad</item>
+        <item>Groundnut</item>
+        <item>Sugarcane</item>
+        <item>Wheat</item>
+        <item>Rapeseed &amp;Mustard</item>
+        <item>Arhar/Tur</item>
+        <item>Gram</item>
+        <item>Jowar</item>
+        <item>Onion</item>
+        <item>Potato</item>
+        <item>Chillies</item>
+        <item>Sunflower</item>
+        <item>Bajra</item>
+        <item>Peas &amp; beans (Pulses)</item>
+        <item>Cotton(lint)</item>
+        <item>Barley</item>
+        <item>Coriander</item>
+        <item>Cowpea(lobia)</item>
+        <item>Garlic</item>
+        <item>Linseed</item>
+        <item>Masoor</item>
+        <item>Ragi</item>
+        <item>Safflower</item>
+        <item>Turmeric</item>
+        <item>Ginger</item>
+        <item>Rice</item>
+
+
+        <item>Sunflower</item>
+        <item>Chilli</item>
+        <item>Potato</item>
+        <item>Onions</item>
+        <item>Wheat</item>
+        <item>Rice</item>
+        <item>Garlic</item>
+    </string-array>
+
+    <string name="soil_type_prompt">Choose soil type</string>
+    <string-array name="soil_type_eng">
+        <item>Alluvial</item>
+        <item>Black</item>
+        <item>Loam</item>
+        <item>Red</item>
+    </string-array>
+
+    <string-array name="soil_type_hindi">
+        <item>जलोढ़</item>
+        <item>काली मिट्टी</item>
+        <item>दोमट</item>
+        <item>लाल मिट्टी</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+
+
+
+    <!--    <string-array name="state_eng">-->
+    <!--        <item>Andhra Pradesh</item>-->
+    <!--        <item>Arunachal Pradesh</item>-->
+    <!--        <item>Assam</item>-->
+    <!--        <item>Bihar</item>-->
+    <!--        <item>Chhatisgarh</item>-->
+    <!--        <item>Goa</item>-->
+    <!--        <item>Gujarat</item>-->
+    <!--        <item>Haryana</item>-->
+    <!--        <item>Himachal Pradesh</item>-->
+    <!--        <item>Jharkhand</item>-->
+    <!--        <item>Karnataka</item>-->
+    <!--        <item>Kerala</item>-->
+    <!--        <item>Madhya Pradesh</item>-->
+    <!--        <item>Maharashtra</item>-->
+    <!--        <item>Manipur</item>-->
+    <!--        <item>Meghalaya</item>-->
+    <!--        <item>Mizoram</item>-->
+    <!--        <item>Nagaland</item>-->
+    <!--        <item>Odisha</item>-->
+    <!--        <item>Punjab</item>-->
+    <!--        <item>Rajasthan</item>-->
+    <!--        <item>Sikkim</item>-->
+    <!--        <item>Tamil Nadu</item>-->
+    <!--        <item>Telangana</item>-->
+    <!--        <item>Tripura</item>-->
+    <!--        <item>Uttar Pradesh</item>-->
+    <!--        <item>Uttarakhand</item>-->
+    <!--        <item>West Bengal</item>-->
+    <!--    </string-array>-->
+
+    <!--    <string name="state_prompt">Select state</string>-->
+
+    <!--    &lt;!&ndash; TODO: Remove or change this placeholder text &ndash;&gt;-->
+    <!--    <string name="hello_blank_fragment">Hello blank fragment</string>-->
+
+    <!--    <string-array name="ANDHRA_PRADESH">-->
+    <!--        <item>ANANTAPUR</item>-->
+    <!--        <item>CHITTOOR</item>-->
+    <!--        <item>EAST GODAVARI</item>-->
+    <!--        <item>GUNTUR</item>-->
+    <!--        <item>KADAPA</item>-->
+    <!--        <item>KRISHNA</item>-->
+    <!--        <item>KURNOOL</item>-->
+    <!--        <item>PRAKASAM</item>-->
+    <!--        <item>SPSR NELLORE,</item>-->
+    <!--        <item>SRIKAKULAM</item>-->
+    <!--    </string-array>-->
+
+    <!--    <string-array name="ARUNACHAL_PRADESH">-->
+    <!--        <item>Anjaw</item>-->
+    <!--        <item>Changlang</item>-->
+    <!--        <item>East Siang</item>-->
+    <!--        <item>Kurung Kumey</item>-->
+    <!--        <item>Lohit</item>-->
+    <!--        <item>Lower Dibang Valley</item>-->
+    <!--        <item>Lower Subansiri</item>-->
+    <!--        <item>Papum Pare</item>-->
+    <!--        <item>Tawang</item>-->
+    <!--        <item>Tirap</item>-->
+    <!--        <item>Dibang Valley</item>-->
+    <!--        <item>Upper Siang</item>-->
+    <!--        <item>Upper Subansiri</item>-->
+    <!--        <item>West Kameng</item>-->
+    <!--        <item>West Siang</item>-->
+    <!--    </string-array>-->
+
+    <!--    <string-array name="ASSAM">-->
+    <!--        <item>Baksa</item>-->
+    <!--        <item>Barpeta</item>-->
+    <!--        <item>Bongaigaon</item>-->
+    <!--        <item>Cachar</item>-->
+    <!--        <item>Chirang</item>-->
+    <!--        <item>Darrang</item>-->
+    <!--        <item>Dhemaji</item>-->
+    <!--        <item>Dima Hasao</item>-->
+    <!--        <item>Dhubri</item>-->
+    <!--        <item>Dibrugarh</item>-->
+    <!--        <item>Goalpara</item>-->
+    <!--        <item>Golaghat</item>-->
+    <!--        <item>Hailakandi</item>-->
+    <!--        <item>Jorhat</item>-->
+    <!--        <item>Kamrup</item>-->
+    <!--        <item>Kamrup Metropolitan</item>-->
+    <!--        <item>Karbi Anglong</item>-->
+    <!--        <item>Karimganj</item>-->
+    <!--        <item>Kokrajhar</item>-->
+    <!--        <item>Lakhimpur</item>-->
+    <!--        <item>Marigaon</item>-->
+    <!--        <item>Nagaon</item>-->
+    <!--        <item>Nalbari</item>-->
+    <!--        <item>Sibsagar</item>-->
+    <!--        <item>Sonitpur</item>-->
+    <!--        <item>Tinsukia</item>-->
+    <!--        <item>Udalguri</item>-->
+    <!--    </string-array>-->
+
+    <!--    <string-array name="BIHAR">-->
+    <!--        <item>Araria</item>-->
+    <!--        <item>Arwal</item>-->
+    <!--        <item>Aurangabad</item>-->
+    <!--        <item>Banka</item>-->
+    <!--        <item>Begusarai</item>-->
+    <!--        <item>Bhagalpur</item>-->
+    <!--        <item>Bhojpur</item>-->
+    <!--        <item>Buxar</item>-->
+    <!--        <item>Darbhanga</item>-->
+    <!--        <item>East Champaran</item>-->
+    <!--        <item>Gaya</item>-->
+    <!--        <item>Gopalganj</item>-->
+    <!--        <item>Jamui</item>-->
+    <!--        <item>Jehanabad</item>-->
+    <!--        <item>Kaimur</item>-->
+    <!--        <item>Katihar</item>-->
+    <!--        <item>Khagaria</item>-->
+    <!--        <item>Kishanganj</item>-->
+    <!--        <item>Lakhisarai</item>-->
+    <!--        <item>Madhepura</item>-->
+    <!--        <item>Madhubani</item>-->
+    <!--        <item>Munger</item>-->
+    <!--        <item>Muzaffarpur</item>-->
+    <!--        <item>Nalanda</item>-->
+    <!--        <item>Nawada</item>-->
+    <!--        <item>Patna</item>-->
+    <!--        <item>Purnia</item>-->
+    <!--        <item>Rohtas</item>-->
+    <!--        <item>Saharsa</item>-->
+    <!--        <item>Samastipur</item>-->
+    <!--        <item>Saran</item>-->
+    <!--        <item>Sheikhpura</item>-->
+    <!--        <item>Sheohar</item>-->
+    <!--        <item>Sitamarhi</item>-->
+    <!--        <item>Siwan</item>-->
+    <!--        <item>Supaul</item>-->
+    <!--        <item>Vaishali</item>-->
+    <!--        <item>West Champaran</item>-->
+    <!--        <item>Chandigarh</item>-->
+    <!--    </string-array>-->
+
+    <!--    <string-array name="CHHATTISGARH">-->
+    <!--        <item>Bastar</item>-->
+    <!--        <item>Bijapur</item>-->
+    <!--        <item>Bilaspur</item>-->
+    <!--        <item>Dantewada</item>-->
+    <!--        <item>Dhamtari</item>-->
+    <!--        <item>Durg</item>-->
+    <!--        <item>Jashpur</item>-->
+    <!--        <item>Janjgir-Champa</item>-->
+    <!--        <item>Korba</item>-->
+    <!--        <item>Koriya</item>-->
+    <!--        <item>Kanker</item>-->
+    <!--        <item>Kabirdham (Kawardha)</item>-->
+    <!--        <item>Mahasamund</item>-->
+    <!--        <item>Narayanpur</item>-->
+    <!--        <item>Raigarh</item>-->
+    <!--        <item>Rajnandgaon</item>-->
+    <!--        <item>Raipur</item>-->
+    <!--        <item>Surguja</item>-->
+    <!--    </string-array>-->
+
+    <!--    <string-array name="DELHI">-->
+    <!--        <item>Central Delhi</item>-->
+    <!--        <item>East Delhi</item>-->
+    <!--        <item>New Delhi</item>-->
+    <!--        <item>North Delhi</item>-->
+    <!--        <item>North East Delhi</item>-->
+    <!--        <item>North West Delhi</item>-->
+    <!--        <item>South Delhi</item>-->
+    <!--        <item>South West Delhi</item>-->
+    <!--        <item>West Delhi</item>-->
+    <!--    </string-array>-->
+
+    <!--    <string-array name="GOA">-->
+    <!--        <item>North Goa</item>-->
+    <!--        <item>South Goa</item>-->
+    <!--    </string-array>-->
+
+    <!--    <string-array name="GUJARAT">-->
+    <!--        <item>Ahmedabad</item>-->
+    <!--        <item>Amreli district</item>-->
+    <!--        <item>Anand</item>-->
+    <!--        <item>Banaskantha</item>-->
+    <!--        <item>Bharuch</item>-->
+    <!--        <item>Bhavnagar</item>-->
+    <!--        <item>Dahod</item>-->
+    <!--        <item>The Dangs</item>-->
+    <!--        <item>Gandhinagar</item>-->
+    <!--        <item>Jamnagar</item>-->
+    <!--        <item>Junagadh</item>-->
+    <!--        <item>Kutch</item>-->
+    <!--        <item>Kheda</item>-->
+    <!--        <item>Mehsana</item>-->
+    <!--        <item>Narmada</item>-->
+    <!--        <item>Navsari</item>-->
+    <!--        <item>Patan</item>-->
+    <!--        <item>Panchmahal</item>-->
+    <!--        <item>Porbandar</item>-->
+    <!--        <item>Rajkot</item>-->
+    <!--        <item>Sabarkantha</item>-->
+    <!--        <item>Surendranagar</item>-->
+    <!--        <item>Surat</item>-->
+    <!--        <item>Vyara</item>-->
+    <!--        <item>Vadodara</item>-->
+    <!--        <item>Valsad</item>-->
+    <!--    </string-array>-->
+
+
+    <!--    <string-array name="HARYANA">-->
+    <!--        <item>Ambala</item>-->
+    <!--        <item>Bhiwani</item>-->
+    <!--        <item>Faridabad</item>-->
+    <!--        <item>Fatehabad</item>-->
+    <!--        <item>Gurgaon</item>-->
+    <!--        <item>Hissar</item>-->
+    <!--        <item>Jhajjar</item>-->
+    <!--        <item>Jind</item>-->
+    <!--        <item>Karnal</item>-->
+    <!--        <item>Kaithal</item>-->
+    <!--        <item>Kurukshetra</item>-->
+    <!--        <item>Mahendragarh</item>-->
+    <!--        <item>Mewat</item>-->
+    <!--        <item>Palwal</item>-->
+    <!--        <item>Panchkula</item>-->
+    <!--        <item>Panipat</item>-->
+    <!--        <item>Rewari</item>-->
+    <!--        <item>Rohtak</item>-->
+    <!--        <item>Sirsa</item>-->
+    <!--        <item>Sonipat</item>-->
+    <!--        <item>Yamuna Nagar</item>-->
+    <!--    </string-array>-->
+
+    <!--    <string-array name="HIMACHAL_PRADESH">-->
+    <!--        <item>Bilaspur</item>-->
+    <!--        <item>Chamba</item>-->
+    <!--        <item>Hamirpur</item>-->
+    <!--        <item>Kangra</item>-->
+    <!--        <item>Kinnaur</item>-->
+    <!--        <item>Kullu</item>-->
+    <!--        <item>Lahaul and Spiti</item>-->
+    <!--        <item>Mandi</item>-->
+    <!--        <item>Shimla</item>-->
+    <!--        <item>Sirmaur</item>-->
+    <!--        <item>Solan</item>-->
+    <!--        <item>Una</item>-->
+    <!--    </string-array>-->
+
+    <!--    <string-array name="JAMMU_AND_KASHMIR">-->
+    <!--        <item>Anantnag</item>-->
+    <!--        <item>Badgam</item>-->
+    <!--        <item>Bandipora</item>-->
+    <!--        <item>Baramulla</item>-->
+    <!--        <item>Doda</item>-->
+    <!--        <item>Ganderbal</item>-->
+    <!--        <item>Jammu</item>-->
+    <!--        <item>Kargil</item>-->
+    <!--        <item>Kathua</item>-->
+    <!--        <item>Kishtwar</item>-->
+    <!--        <item>Kupwara</item>-->
+    <!--        <item>Kulgam</item>-->
+    <!--        <item>Leh</item>-->
+    <!--        <item>Poonch</item>-->
+    <!--        <item>Pulwama</item>-->
+    <!--        <item>Rajauri</item>-->
+    <!--        <item>Ramban</item>-->
+    <!--        <item>Reasi</item>-->
+    <!--        <item>Samba</item>-->
+    <!--        <item>Shopian</item>-->
+    <!--        <item>Srinagar</item>-->
+    <!--        <item>Udhampur</item>-->
+    <!--    </string-array>-->
+
+    <!--    <string-array name="JHARKHAND">-->
+    <!--        <item>Bokaro</item>-->
+    <!--        <item>Chatra</item>-->
+    <!--        <item>Deoghar</item>-->
+    <!--        <item>Dhanbad</item>-->
+    <!--        <item>Dumka</item>-->
+    <!--        <item>East Singhbhum</item>-->
+    <!--        <item>Garhwa</item>-->
+    <!--        <item>Giridih</item>-->
+    <!--        <item>Godda</item>-->
+    <!--        <item>Gumla</item>-->
+    <!--        <item>Hazaribag</item>-->
+    <!--        <item>Jamtara</item>-->
+    <!--        <item>Khunti</item>-->
+    <!--        <item>Koderma</item>-->
+    <!--        <item>Latehar</item>-->
+    <!--        <item>Lohardaga</item>-->
+    <!--        <item>Pakur</item>-->
+    <!--        <item>Palamu</item>-->
+    <!--        <item>Ramgarh</item>-->
+    <!--        <item>Ranchi</item>-->
+    <!--        <item>Sahibganj</item>-->
+    <!--        <item>Seraikela Kharsawan</item>-->
+    <!--        <item>Simdega</item>-->
+    <!--        <item>West Singhbhum</item>-->
+    <!--    </string-array>-->
+
+    <!--    <string-array name="KARNATAKA">-->
+    <!--        <item>Bagalkot</item>-->
+    <!--        <item>Bangalore Rural</item>-->
+    <!--        <item>Bangalore Urban</item>-->
+    <!--        <item>Belgaum</item>-->
+    <!--        <item>Bellary</item>-->
+    <!--        <item>Bidar</item>-->
+    <!--        <item>Bijapur</item>-->
+    <!--        <item>Chamarajnagar</item>-->
+    <!--        <item>Chikkamagaluru</item>-->
+    <!--        <item>Chikkaballapur</item>-->
+    <!--        <item>Chitradurga</item>-->
+    <!--        <item>Davanagere</item>-->
+    <!--        <item>Dharwad</item>-->
+    <!--        <item>Dakshina Kannada</item>-->
+    <!--        <item>Gadag</item>-->
+    <!--        <item>Gulbarga</item>-->
+    <!--        <item>Hassan</item>-->
+    <!--        <item>Haveri district</item>-->
+    <!--        <item>Kodagu</item>-->
+    <!--        <item>Kolar</item>-->
+    <!--        <item>Koppal</item>-->
+    <!--        <item>Mandya</item>-->
+    <!--        <item>Mysore</item>-->
+    <!--        <item>Raichur</item>-->
+    <!--        <item>Shimoga</item>-->
+    <!--        <item>Tumkur</item>-->
+    <!--        <item>Udupi</item>-->
+    <!--        <item>Uttara Kannada</item>-->
+    <!--        <item>Ramanagara</item>-->
+    <!--        <item>Yadgir</item>-->
+    <!--    </string-array>-->
+
+    <!--    <string-array name="KERALA">-->
+    <!--        <item>Alappuzha</item>-->
+    <!--        <item>Ernakulam</item>-->
+    <!--        <item>Idukki</item>-->
+    <!--        <item>Kannur</item>-->
+    <!--        <item>Kasaragod</item>-->
+    <!--        <item>Kollam</item>-->
+    <!--        <item>Kottayam</item>-->
+    <!--        <item>Kozhikode</item>-->
+    <!--        <item>Malappuram</item>-->
+    <!--        <item>Palakkad</item>-->
+    <!--        <item>Pathanamthitta</item>-->
+    <!--        <item>Thrissur</item>-->
+    <!--        <item>Thiruvananthapuram</item>-->
+    <!--        <item>Wayanad</item>-->
+    <!--    </string-array>-->
+
+    <!--    <string-array name="MADHYA_PRADESH">-->
+    <!--        <item>Alirajpur</item>-->
+    <!--        <item>Anuppur</item>-->
+    <!--        <item>Ashok Nagar</item>-->
+    <!--        <item>Balaghat</item>-->
+    <!--        <item>Barwani</item>-->
+    <!--        <item>Betul</item>-->
+    <!--        <item>Bhind</item>-->
+    <!--        <item>Bhopal</item>-->
+    <!--        <item>Burhanpur</item>-->
+    <!--        <item>Chhatarpur</item>-->
+    <!--        <item>Chhindwara</item>-->
+    <!--        <item>Damoh</item>-->
+    <!--        <item>Datia</item>-->
+    <!--        <item>Dewas</item>-->
+    <!--        <item>Dhar</item>-->
+    <!--        <item>Dindori</item>-->
+    <!--        <item>Guna</item>-->
+    <!--        <item>Gwalior</item>-->
+    <!--        <item>Harda</item>-->
+    <!--        <item>Hoshangabad</item>-->
+    <!--        <item>Indore</item>-->
+    <!--        <item>Jabalpur</item>-->
+    <!--        <item>Jhabua</item>-->
+    <!--        <item>Katni</item>-->
+    <!--        <item>Khandwa (East Nimar)</item>-->
+    <!--        <item>Khargone (West Nimar)</item>-->
+    <!--        <item>Mandla</item>-->
+    <!--        <item>Mandsaur</item>-->
+    <!--        <item>Morena</item>-->
+    <!--        <item>Narsinghpur</item>-->
+    <!--        <item>Neemuch</item>-->
+    <!--        <item>Panna</item>-->
+    <!--        <item>Rewa</item>-->
+    <!--        <item>Rajgarh</item>-->
+    <!--        <item>Ratlam</item>-->
+    <!--        <item>Raisen</item>-->
+    <!--        <item>Sagar</item>-->
+    <!--        <item>Satna</item>-->
+    <!--        <item>Sehore</item>-->
+    <!--        <item>Seoni</item>-->
+    <!--        <item>Shahdol</item>-->
+    <!--        <item>Shajapur</item>-->
+    <!--        <item>Sheopur</item>-->
+    <!--        <item>Shivpuri</item>-->
+    <!--        <item>Sidhi</item>-->
+    <!--        <item>Singrauli</item>-->
+    <!--        <item>Tikamgarh</item>-->
+    <!--        <item>Ujjain</item>-->
+    <!--        <item>Umaria</item>-->
+    <!--        <item>Vidisha</item>-->
+    <!--    </string-array>-->
+
+    <!--    <string-array name="MAHARASHTRA">-->
+    <!--        <item>Ahmednagar</item>-->
+    <!--        <item>Akola</item>-->
+    <!--        <item>Amravati</item>-->
+    <!--        <item>Aurangabad</item>-->
+    <!--        <item>Bhandara</item>-->
+    <!--        <item>Beed</item>-->
+    <!--        <item>Buldhana</item>-->
+    <!--        <item>Chandrapur</item>-->
+    <!--        <item>Dhule</item>-->
+    <!--        <item>Gadchiroli</item>-->
+    <!--        <item>Gondia</item>-->
+    <!--        <item>Hingoli</item>-->
+    <!--        <item>Jalgaon</item>-->
+    <!--        <item>Jalna</item>-->
+    <!--        <item>Kolhapur</item>-->
+    <!--        <item>Latur</item>-->
+    <!--        <item>Mumbai City</item>-->
+    <!--        <item>Mumbai suburban</item>-->
+    <!--        <item>Nandurbar</item>-->
+    <!--        <item>Nanded</item>-->
+    <!--        <item>Nagpur</item>-->
+    <!--        <item>Nashik</item>-->
+    <!--        <item>Osmanabad</item>-->
+    <!--        <item>Parbhani</item>-->
+    <!--        <item>Pune</item>-->
+    <!--        <item>Raigad</item>-->
+    <!--        <item>Ratnagiri</item>-->
+    <!--        <item>Sindhudurg</item>-->
+    <!--        <item>Sangli</item>-->
+    <!--        <item>Solapur</item>-->
+    <!--        <item>Satara</item>-->
+    <!--        <item>Thane</item>-->
+    <!--        <item>Wardha</item>-->
+    <!--        <item>Washim</item>-->
+    <!--        <item>Yavatmal</item>-->
+    <!--    </string-array>-->
+
+    <!--    <string-array name="DAMAN_DIU">-->
+    <!--        <item>Daman</item>-->
+    <!--        <item>Diu</item>-->
+    <!--    </string-array>-->
+
+    <!--    <string-array name="DADRA_NAGAR_HAVELI">-->
+    <!--        <item>Dadra and Nagar Haveli</item>-->
+    <!--    </string-array>-->
+
+    <!--    <string-array name="MANIPUR">-->
+    <!--        <item>Bishnupur</item>-->
+    <!--        <item>Churachandpur</item>-->
+    <!--        <item>Chandel</item>-->
+    <!--        <item>Imphal East</item>-->
+    <!--        <item>Senapati</item>-->
+    <!--        <item>Tamenglong</item>-->
+    <!--        <item>Thoubal</item>-->
+    <!--        <item>Ukhrul</item>-->
+    <!--        <item>Imphal West</item>-->
+    <!--    </string-array>-->
+
+    <!--    <string-array name="MEGHALAYA">-->
+    <!--        <item>East Garo Hills</item>-->
+    <!--        <item>East Khasi Hills</item>-->
+    <!--        <item>Jaintia Hills</item>-->
+    <!--        <item>Ri Bhoi</item>-->
+    <!--        <item>South Garo Hills</item>-->
+    <!--        <item>West Garo Hills</item>-->
+    <!--        <item>West Khasi Hills</item>-->
+    <!--    </string-array>-->
+
+    <!--    <string-array name="MIZORAM">-->
+    <!--        <item>Aizawl</item>-->
+    <!--        <item>Champhai</item>-->
+    <!--        <item>Kolasib</item>-->
+    <!--        <item>Lawngtlai</item>-->
+    <!--        <item>Lunglei</item>-->
+    <!--        <item>Mamit</item>-->
+    <!--        <item>Saiha</item>-->
+    <!--        <item>Serchhip</item>-->
+    <!--    </string-array>-->
+
+
+    <!--    <string-array name="ORISSA">-->
+    <!--        <item>Angul</item>-->
+    <!--        <item>Boudh (Bauda)</item>-->
+    <!--        <item>Bhadrak</item>-->
+    <!--        <item>Balangir</item>-->
+    <!--        <item>Bargarh (Baragarh)</item>-->
+    <!--        <item>Balasore</item>-->
+    <!--        <item>Cuttack</item>-->
+    <!--        <item>Debagarh (Deogarh)</item>-->
+    <!--        <item>Dhenkanal</item>-->
+    <!--        <item>Ganjam</item>-->
+    <!--        <item>Gajapati</item>-->
+    <!--        <item>Jharsuguda</item>-->
+    <!--        <item>Jajpur</item>-->
+    <!--        <item>Jagatsinghpur</item>-->
+    <!--        <item>Khordha</item>-->
+    <!--        <item>Kendujhar (Keonjhar)</item>-->
+    <!--        <item>Kalahandi</item>-->
+    <!--        <item>Kandhamal</item>-->
+    <!--        <item>Koraput</item>-->
+    <!--        <item>Kendrapara</item>-->
+    <!--        <item>Malkangiri</item>-->
+    <!--        <item>Mayurbhanj</item>-->
+    <!--        <item>Nabarangpur</item>-->
+    <!--        <item>Nuapada</item>-->
+    <!--        <item>Nayagarh</item>-->
+    <!--        <item>Puri</item>-->
+    <!--        <item>Rayagada</item>-->
+    <!--        <item>Sambalpur</item>-->
+    <!--        <item>Subarnapur (Sonepur)</item>-->
+    <!--        <item>Sundergarh</item>-->
+    <!--    </string-array>-->
+
+
+    <!--    <string-array name="PONDICHERRY">-->
+    <!--        <item>Karaikal</item>-->
+    <!--        <item>Mahe</item>-->
+    <!--        <item>Pondicherry</item>-->
+    <!--        <item>Yanam</item>-->
+    <!--    </string-array>-->
+
+
+    <!--    <string-array name="PUNJAB">-->
+    <!--        <item>Amritsar</item>-->
+    <!--        <item>Barnala</item>-->
+    <!--        <item>Bathinda</item>-->
+    <!--        <item>Firozpur</item>-->
+    <!--        <item>Faridkot</item>-->
+    <!--        <item>Fatehgarh Sahib</item>-->
+    <!--        <item>Fazilka</item>-->
+    <!--        <item>Gurdaspur</item>-->
+    <!--        <item>Hoshiarpur</item>-->
+    <!--        <item>Jalandhar</item>-->
+    <!--        <item>Kapurthala</item>-->
+    <!--        <item>Ludhiana</item>-->
+    <!--        <item>Mansa</item>-->
+    <!--        <item>Moga</item>-->
+    <!--        <item>Sri Muktsar Sahib</item>-->
+    <!--        <item>Pathankot</item>-->
+    <!--        <item>Patiala</item>-->
+    <!--        <item>Rupnagar</item>-->
+    <!--        <item>Ajitgarh (Mohali)</item>-->
+    <!--        <item>Sangrur</item>-->
+    <!--        <item>Nawanshahr</item>-->
+    <!--        <item>Tarn Taran</item>-->
+    <!--    </string-array>-->
+
+    <!--    <string-array name="RAJASTHAN">-->
+    <!--        <item>Ajmer</item>-->
+    <!--        <item>Alwar</item>-->
+    <!--        <item>Bikaner</item>-->
+    <!--        <item>Barmer</item>-->
+    <!--        <item>Banswara</item>-->
+    <!--        <item>Bharatpur</item>-->
+    <!--        <item>Baran</item>-->
+    <!--        <item>Bundi</item>-->
+    <!--        <item>Bhilwara</item>-->
+    <!--        <item>Churu</item>-->
+    <!--        <item>Chittorgarh</item>-->
+    <!--        <item>Dausa</item>-->
+    <!--        <item>Dholpur</item>-->
+    <!--        <item>Dungapur</item>-->
+    <!--        <item>Ganganagar</item>-->
+    <!--        <item>Hanumangarh</item>-->
+    <!--        <item>Jhunjhunu</item>-->
+    <!--        <item>Jalore</item>-->
+    <!--        <item>Jodhpur</item>-->
+    <!--        <item>Jaipur</item>-->
+    <!--        <item>Jaisalmer</item>-->
+    <!--        <item>Jhalawar</item>-->
+    <!--        <item>Karauli</item>-->
+    <!--        <item>Kota</item>-->
+    <!--        <item>Nagaur</item>-->
+    <!--        <item>Pali</item>-->
+    <!--        <item>Pratapgarh</item>-->
+    <!--        <item>Rajsamand</item>-->
+    <!--        <item>Sikar</item>-->
+    <!--        <item>Sawai Madhopur</item>-->
+    <!--        <item>Sirohi</item>-->
+    <!--        <item>Tonk</item>-->
+    <!--        <item>Udaipur</item>-->
+    <!--    </string-array>-->
+
+    <!--    <string-array name="SIKKIM">-->
+    <!--        <item>East Sikkim</item>-->
+    <!--        <item>North Sikkim</item>-->
+    <!--        <item>South Sikkim</item>-->
+    <!--        <item>West Sikkim</item>-->
+    <!--    </string-array>-->
+
+    <!--    <string-array name="TRIPURA">-->
+    <!--        <item>Dhalai</item>-->
+    <!--        <item>North Tripura</item>-->
+    <!--        <item>South Tripura</item>-->
+    <!--        <item>Khowai</item>-->
+    <!--        <item>West Tripura</item>-->
+    <!--    </string-array>-->
+
+    <!--    <string-array name="TAMIL_NADU">-->
+    <!--        <item>Ariyalur</item>-->
+    <!--        <item>Chennai</item>-->
+    <!--        <item>Coimbatore</item>-->
+    <!--        <item>Cuddalore</item>-->
+    <!--        <item>Dharmapuri</item>-->
+    <!--        <item>Dindigul</item>-->
+    <!--        <item>Erode</item>-->
+    <!--        <item>Kanchipuram</item>-->
+    <!--        <item>Kanyakumari</item>-->
+    <!--        <item>Karur</item>-->
+    <!--        <item>Madurai</item>-->
+    <!--        <item>Nagapattinam</item>-->
+    <!--        <item>Nilgiris</item>-->
+    <!--        <item>Namakkal</item>-->
+    <!--        <item>Perambalur</item>-->
+    <!--        <item>Pudukkottai</item>-->
+    <!--        <item>Ramanathapuram</item>-->
+    <!--        <item>Salem</item>-->
+    <!--        <item>Sivaganga</item>-->
+    <!--        <item>Tirupur</item>-->
+    <!--        <item>Tiruchirappalli</item>-->
+    <!--        <item>Theni</item>-->
+    <!--        <item>Tirunelveli</item>-->
+    <!--        <item>Thanjavur</item>-->
+    <!--        <item>Thoothukudi</item>-->
+    <!--        <item>Tiruvallur</item>-->
+    <!--        <item>Tiruvarur</item>-->
+    <!--        <item>Tiruvannamalai</item>-->
+    <!--        <item>Vellore</item>-->
+    <!--        <item>Viluppuram</item>-->
+    <!--        <item>Virudhunagar</item>-->
+    <!--    </string-array>-->
+
+
+    <!--    <string-array name="UTTER_PRADESH">-->
+    <!--        <item>Agra</item>-->
+    <!--        <item>Allahabad</item>-->
+    <!--        <item>Aligarh</item>-->
+    <!--        <item>Ambedkar Nagar</item>-->
+    <!--        <item>Auraiya</item>-->
+    <!--        <item>Azamgarh</item>-->
+    <!--        <item>Barabanki</item>-->
+    <!--        <item>Budaun</item>-->
+    <!--        <item>Bagpat</item>-->
+    <!--        <item>Bahraich</item>-->
+    <!--        <item>Bijnor</item>-->
+    <!--        <item>Ballia</item>-->
+    <!--        <item>Banda</item>-->
+    <!--        <item>Balrampur</item>-->
+    <!--        <item>Bareilly</item>-->
+    <!--        <item>Basti</item>-->
+    <!--        <item>Bulandshahr</item>-->
+    <!--        <item>Chandauli</item>-->
+    <!--        <item>Chhatrapati Shahuji Maharaj Nagar</item>-->
+    <!--        <item>Chitrakoot</item>-->
+    <!--        <item>Deoria</item>-->
+    <!--        <item>Etah</item>-->
+    <!--        <item>Kanshi Ram Nagar</item>-->
+    <!--        <item>Etawah</item>-->
+    <!--        <item>Firozabad</item>-->
+    <!--        <item>Farrukhabad</item>-->
+    <!--        <item>Fatehpur</item>-->
+    <!--        <item>Faizabad</item>-->
+    <!--        <item>Gautam Buddh Nagar</item>-->
+    <!--        <item>Gonda</item>-->
+    <!--        <item>Ghazipur</item>-->
+    <!--        <item>Gorakhpur</item>-->
+    <!--        <item>Ghaziabad</item>-->
+    <!--        <item>Hamirpur</item>-->
+    <!--        <item>Hardoi</item>-->
+    <!--        <item>Mahamaya Nagar</item>-->
+    <!--        <item>Jhansi</item>-->
+    <!--        <item>Jalaun</item>-->
+    <!--        <item>Jyotiba Phule Nagar</item>-->
+    <!--        <item>Jaunpur district</item>-->
+    <!--        <item>Ramabai Nagar (Kanpur Dehat)</item>-->
+    <!--        <item>Kannauj</item>-->
+    <!--        <item>Kanpur</item>-->
+    <!--        <item>Kaushambi</item>-->
+    <!--        <item>Kushinagar</item>-->
+    <!--        <item>Lalitpur</item>-->
+    <!--        <item>Lakhimpur Kheri</item>-->
+    <!--        <item>Lucknow</item>-->
+    <!--        <item>Mau</item>-->
+    <!--        <item>Meerut</item>-->
+    <!--        <item>Maharajganj</item>-->
+    <!--        <item>Mahoba</item>-->
+    <!--        <item>Mirzapur</item>-->
+    <!--        <item>Moradabad</item>-->
+    <!--        <item>Mainpuri</item>-->
+    <!--        <item>Mathura</item>-->
+    <!--        <item>Muzaffarnagar</item>-->
+    <!--        <item>Panchsheel Nagar district (Hapur)</item>-->
+    <!--        <item>Pilibhit</item>-->
+    <!--        <item>Shamli</item>-->
+    <!--        <item>Pratapgarh</item>-->
+    <!--        <item>Rampur</item>-->
+    <!--        <item>Raebareli</item>-->
+    <!--        <item>Saharanpur</item>-->
+    <!--        <item>Sitapur</item>-->
+    <!--        <item>Shahjahanpur</item>-->
+    <!--        <item>Sant Kabir Nagar</item>-->
+    <!--        <item>Siddharthnagar</item>-->
+    <!--        <item>Sonbhadra</item>-->
+    <!--        <item>Sant Ravidas Nagar</item>-->
+    <!--        <item>Sultanpur</item>-->
+    <!--        <item>Shravasti</item>-->
+    <!--        <item>Unnao</item>-->
+    <!--        <item>Varanasi</item>-->
+    <!--    </string-array>-->
+
+
+    <!--    <string-array name="UTTARAKHAND">-->
+    <!--        <item>Almora</item>-->
+    <!--        <item>Bageshwar</item>-->
+    <!--        <item>Chamoli</item>-->
+    <!--        <item>Champawat</item>-->
+    <!--        <item>Dehradun</item>-->
+    <!--        <item>Haridwar</item>-->
+    <!--        <item>Nainital</item>-->
+    <!--        <item>Pauri Garhwal</item>-->
+    <!--        <item>Pithoragarh</item>-->
+    <!--        <item>Rudraprayag</item>-->
+    <!--        <item>Tehri Garhwal</item>-->
+    <!--        <item>Udham Singh Nagar</item>-->
+    <!--        <item>Uttarkashi</item>-->
+    <!--    </string-array>-->
+
+
+    <!--    <string-array name="WEST_BENGAL">-->
+    <!--        <item>Birbhum</item>-->
+    <!--        <item>Bankura</item>-->
+    <!--        <item>Bardhaman</item>-->
+    <!--        <item>Darjeeling</item>-->
+    <!--        <item>Dakshin Dinajpur</item>-->
+    <!--        <item>Hooghly</item>-->
+    <!--        <item>Howrah</item>-->
+    <!--        <item>Jalpaiguri</item>-->
+    <!--        <item>Cooch Behar</item>-->
+    <!--        <item>Kolkata</item>-->
+    <!--        <item>Maldah</item>-->
+    <!--        <item>Paschim Medinipur</item>-->
+    <!--        <item>Purba Medinipur</item>-->
+    <!--        <item>Murshidabad</item>-->
+    <!--        <item>Nadia</item>-->
+    <!--        <item>North 24 Parganas</item>-->
+    <!--        <item>South 24 Parganas</item>-->
+    <!--        <item>Purulia</item>-->
+    <!--        <item>Uttar Dinajpur</item>-->
+    <!--    </string-array>-->
+</resources>
