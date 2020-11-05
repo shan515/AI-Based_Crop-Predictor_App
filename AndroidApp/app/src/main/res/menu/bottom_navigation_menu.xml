@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_predict"
+        android:icon="@drawable/ic_predict"
+        android:title="Predict" />
+
+    <item
+        android:id="@+id/navigation_history"
+        android:icon="@drawable/ic_history"
+        android:title="History" />
+
+    <item
+        android:id="@+id/navigation_other"
+        android:icon="@drawable/ic_other"
+        android:title="Connect" />
+
+
+</menu>

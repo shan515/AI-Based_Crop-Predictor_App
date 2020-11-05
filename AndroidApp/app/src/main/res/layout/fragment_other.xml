@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:forceDarkAllowed="false"
+    android:background="@drawable/gradient_animation"
+    android:id="@+id/fragment_layout_other"
+    android:layout_height="match_parent"
+    tools:context=".ui.other.OtherFragment">
+
+
+    <Button
+        android:id="@+id/button_info_exchange"
+        android:layout_width="264dp"
+        android:layout_height="80dp"
+        android:background="@drawable/other_buttons"
+        android:backgroundTint="@color/orange_yellow"
+        android:padding="20dp"
+        android:text="Information Exchange"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:theme="@style/button_links"
+        app:layout_constraintBottom_toTopOf="@+id/button_dealer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.891"></Button>
+
+    <Button
+        android:id="@+id/button_dealer"
+        android:layout_width="264dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="276dp"
+        android:background="@drawable/other_buttons"
+        android:backgroundTint="@color/red"
+        android:padding="20dp"
+        android:text="Dealers"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:theme="@style/button_dealers"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"></Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

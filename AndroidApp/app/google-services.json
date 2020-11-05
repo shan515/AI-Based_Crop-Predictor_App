@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "270939624761",
+    "firebase_url": "https://cropprediction-47703.firebaseio.com",
+    "project_id": "cropprediction-47703",
+    "storage_bucket": "cropprediction-47703.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:270939624761:android:19ecb0344a81af687d44e8",
+        "android_client_info": {
+          "package_name": "com.example.cropprediction"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "270939624761-ic31a63okklc0ohmdqgmrfaao56tcm24.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpf-kafNYyWegGVjShGafbZ7geHoi9qPw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "270939624761-ic31a63okklc0ohmdqgmrfaao56tcm24.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:270939624761:android:47443e59de0940e27d44e8",
+        "android_client_info": {
+          "package_name": "com.example.predictcrops"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "270939624761-ic31a63okklc0ohmdqgmrfaao56tcm24.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpf-kafNYyWegGVjShGafbZ7geHoi9qPw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "270939624761-ic31a63okklc0ohmdqgmrfaao56tcm24.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

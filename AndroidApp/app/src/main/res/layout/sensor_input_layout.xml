@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:forceDarkAllowed="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:fontFamily="@font/exo_2_bold"
+        android:text="IoT Sensor Values"
+        android:textColor="@color/dark_green"
+        android:textSize="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+
+    <TextView
+        android:id="@+id/label_iot_potassium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="88dp"
+        android:fontFamily="@font/exo_2_bold"
+        android:text="Potassium:"
+        android:textColor="@color/farm_mud"
+        android:textSize="23dp"
+        app:layout_constraintEnd_toStartOf="@+id/iot_potassium"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_iot_phos" />
+
+    <Button
+        android:id="@+id/button_get_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/purple_500"
+        android:fontFamily="@font/exo_2_bold"
+        android:text="Get Data"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/iot_nitrogen"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="140dp"
+        android:hint="25"
+        android:inputType="number"
+        android:lines="1"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iot_ph" />
+
+    <EditText
+        android:id="@+id/iot_phos"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="140dp"
+        android:hint="25"
+        android:inputType="number"
+        android:lines="1"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iot_nitrogen" />
+
+    <EditText
+        android:id="@+id/iot_potassium"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="140dp"
+        android:hint="25"
+        android:inputType="number"
+        android:lines="1"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iot_phos" />
+
+    <EditText
+        android:id="@+id/iot_ph"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="140dp"
+        android:hint="25"
+        android:inputType="number"
+        android:lines="1"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_get_data" />
+
+    <TextView
+        android:id="@+id/label_iot_phos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/exo_2_bold"
+        android:text="Phosphorous:"
+        android:textColor="@color/farm_mud"
+        android:textSize="23dp"
+        app:layout_constraintEnd_toStartOf="@+id/iot_phos"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_iot_nitrogen" />
+
+    <TextView
+        android:id="@+id/label_iot_ph"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/exo_2_bold"
+        android:text="Soil pH :"
+        android:textColor="@color/farm_mud"
+        android:textSize="23dp"
+        app:layout_constraintEnd_toStartOf="@+id/iot_ph"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_get_data" />
+
+    <TextView
+        android:id="@+id/label_iot_nitrogen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/exo_2_bold"
+        android:text="Nitrogen:"
+        android:textColor="@color/farm_mud"
+        android:textSize="23dp"
+        app:layout_constraintEnd_toStartOf="@+id/iot_nitrogen"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_iot_ph" />
+
+    <Button
+        android:id="@+id/button_language_switch"
+        android:layout_width="58dp"
+        android:layout_height="60dp"
+        android:background="@drawable/ic_language_swap"
+        android:backgroundTint="@color/orange_yellow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.029" />
+
+    <Button
+        android:id="@+id/button_prev_page"
+        android:layout_width="99dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="63dp"
+        android:background="@drawable/ic_next_arrow"
+        android:backgroundTint="@color/bottom_nav_color"
+        android:rotation="180"
+        android:theme="@style/NextPrevPageTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_predict"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_predict"
+        android:layout_width="145dp"
+        android:layout_height="66dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="59dp"
+        android:background="@drawable/round_corners"
+        android:padding="8dp"
+        android:text="Predict"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:theme="@style/SearchButtonTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"></Button>
+
+    <!--    <Button-->
+<!--        android:id="@+id/button_predict"-->
+<!--        android:layout_width="140dp"-->
+<!--        android:layout_height="62dp"-->
+<!--        android:layout_marginEnd="28dp"-->
+<!--        android:layout_marginBottom="76dp"-->
+<!--        android:background="@drawable/round_corners"-->
+<!--        android:padding="8dp"-->
+<!--        android:text="Predict"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="20dp"-->
+<!--        android:theme="@style/SearchButtonTheme"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/random_potassium"-->
+<!--        app:layout_constraintVertical_bias="0.894"></Button>-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

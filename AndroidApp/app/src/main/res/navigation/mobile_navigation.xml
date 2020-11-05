@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_predict">
+
+    <fragment
+        android:id="@+id/navigation_predict"
+        android:name="com.example.cropprediction.ui.predict.PredictFragment"
+        android:label="Predict"
+        tools:layout="@layout/fragment_predict" />
+
+    <fragment
+        android:id="@+id/navigation_iot"
+        android:name="com.example.cropprediction.ui.predict.IoTFragment"
+        android:label="Iot Fragment"
+        tools:layout="@layout/sensor_input_layout" />
+
+<!--    <fragment-->
+<!--        android:id="@+id/navigation_location"-->
+<!--        android:name="com.example.cropprediction.ui.predict.LocationFragment"-->
+<!--        android:label="Location Fragment"-->
+<!--        tools:layout="@layout/fragment_location" />-->
+
+    <fragment
+        android:id="@+id/navigation_history"
+        android:name="com.example.cropprediction.ui.history.HistoryFragment"
+        android:label="History"
+        tools:layout="@layout/fragment_history" />
+
+    <fragment
+        android:id="@+id/navigation_other"
+        android:name="com.example.cropprediction.ui.other.OtherFragment"
+        android:label="History"
+        tools:layout="@layout/fragment_other" />
+
+    <fragment
+        android:id="@+id/navigation_info_exchange"
+        android:name="com.example.cropprediction.ui.other.InformationExchangeFragment"
+        android:label="Connect"
+        tools:layout="@layout/fragment_information_exchange" />
+
+</navigation>
