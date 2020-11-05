@@ -1,0 +1,11 @@
+Follow the below instructions to set-up the application:
+________________________________________________________
+1) Clone the repo 
+2) Navigate to /Server directory
+3) Run the server on local-machine or cloud (sudo python3 app.py)
+4) Change the ip accordingly in the app
+5) Install the android app (CropPredictor_v1.apk)
+6) Use the app to select the desired values. (Screen shots attached in the README.md file)
+7) Get the predicted crop results!
+8) The app also has features to connect to ICARS, KVK and SAU websites.
+9) Star & Watch the repository for more updates! :P
