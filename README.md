@@ -10,7 +10,7 @@ The problem statement focuses on promoting crop recomendation/rotating to help f
 ## The solution is divided into 5 major aspects  
   - [Front end](#front-end)
   - [Data analysis and generation](#data-analysis-and-generation)
-  - [AI/ML computation/prediction](#ai/ml-computation/prediction)
+  - [AI/ML](#ai/ml)
   - [Backend of app](#backend-of-app)
   - [Deployement on oracle cloud](#deployment-on-oracle-cloud)
   
@@ -33,7 +33,10 @@ The problem statement focuses on promoting crop recomendation/rotating to help f
    - Agricultural agencies  
    - Agricultural resources/links  
  - History  
-   - List and information of previously grown crops  
+   - List and information of previously grown crops   
+   
+ <img src="assets/input_page.jpeg" width="425"/>      <img src="assets/iot_page.jpeg" width="425"/>   
+ 
    
    
  ### Data Analysis and Generation  
@@ -41,9 +44,10 @@ The problem statement focuses on promoting crop recomendation/rotating to help f
    - Kaggle : State Name, District Name, Season of cropping , Area, Production, Crop.  
    - Synthetic Data : Teperature range, Sowing temperature, Harvesting Temperature, pH, Nitrogen-Phosphorous-Potassium, Soil type , Water resource.  
    - Forecast Data : Weather/rainfall forecast data , Ground water and Irrigation.  
-   ![](https://github.com/shan515/Lets_HackIT/blob/images/assets/sns.png)
+   ![](https://github.com/shan515/Lets_HackIT/blob/images/assets/sns.png)  
+  
  
-### AI/ML computation/prediction  
+### AI/ML 
   NEURAL NETWORK PROVIDES A MORE ACCURATE WAY OF DEALING WITH DATASETS WHERE THERE ARE MANY INTERSECTIONS LIKE THE ONE ON WHICH WE ARE WORKING ON.  
   - The Neural Network consists of  
     - 12 input parameteres  
@@ -67,9 +71,29 @@ The problem statement focuses on promoting crop recomendation/rotating to help f
 - Returns a JSON for predicted crop with probability.   
 
 
+## Output
+
+### Postman Test
+<img src="assets/postman.png" width="625"/> 
+
+### App Output
+<img src="assets/output_app.jpeg" width="425"/> 
+
 ### Additional Output (Auto-Genereated)  
 ![PDF File of Output](https://github.com/shan515/Lets_HackIT/blob/images/assets/Arhar_Tur_eng.pdf)
 
+
+## To Do
+- We have deployed the app on Oracle cloud. There are sme minor issues which have to be fixed. 
+- Add disease recognition using computer vision
+- Find nearest crop mandal for farmer
+
+## Contributers
+- [Sravan Chittupalli](https://github.com/SravanChittupalli)
+- [Shantanu Pande](https://github.com/shan515)
+- [Twisha Shah](https://github.com/high-functioning-sociopath)
+- [Prithvi Shirke](https://github.com/prithvi1809)
+- [Khushal Shah](https://github.com/KhushalPShah)
 
   
       
