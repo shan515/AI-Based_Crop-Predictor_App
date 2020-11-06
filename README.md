@@ -11,7 +11,7 @@ The problem statement focuses on promoting crop recomendation/rotating to help f
   - [Front end](#front-end)
   - [Data analysis and generation](#data-analysis-and-generation)
   - [AI/ML](#aiml)
-  - [App Deployment](#deployment-backend)
+  - [App Deployment](#deployement-backend)
   - [Outputs](#output)
   - [To DO](#to-do)
   - [Contributers](#contributers)
