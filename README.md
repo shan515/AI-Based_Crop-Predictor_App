@@ -14,7 +14,7 @@ The problem statement focuses on promoting crop recomendation/rotating to help f
   - [App Deployment](#deployement-backend)
   - [Outputs](#output)
   - [To DO](#to-do)
-  - [Contributers](#contributers)
+  - [Contributers](#made-with-heart-by)
   
 ### Front End  
 - User Friendly  
