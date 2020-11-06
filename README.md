@@ -10,9 +10,11 @@ The problem statement focuses on promoting crop recomendation/rotating to help f
 ## The solution is divided into 5 major aspects  
   - [Front end](#front-end)
   - [Data analysis and generation](#data-analysis-and-generation)
-  - [AI/ML](#ai/ml)
-  - [Backend of app](#backend-of-app)
-  - [Deployement on oracle cloud](#deployment-on-oracle-cloud)
+  - [AI/ML](#aiml)
+  - [App Deployment](#deployment-backend)
+  - [Outputs](#output)
+  - [To DO](#to-do)
+  - [Contributers](#contributers)
   
 ### Front End  
 - User Friendly  
@@ -88,12 +90,12 @@ The problem statement focuses on promoting crop recomendation/rotating to help f
 - Add disease recognition using computer vision
 - Find nearest crop mandal for farmer
 
-## Contributers
-- [Sravan Chittupalli](https://github.com/SravanChittupalli)
-- [Shantanu Pande](https://github.com/shan515)
-- [Twisha Shah](https://github.com/high-functioning-sociopath)
-- [Prithvi Shirke](https://github.com/prithvi1809)
-- [Khushal Shah](https://github.com/KhushalPShah)
+## Made with :heart: by:
+- [Sravan Chittupalli](https://github.com/SravanChittupalli) :smile:
+- [Shantanu Pande](https://github.com/shan515)  :sleepy:
+- [Twisha Shah](https://github.com/high-functioning-sociopath) :innocent:
+- [Prithvi Shirke](https://github.com/prithvi1809)  :sunglasses:
+- [Khushal Shah](https://github.com/KhushalPShah) :raised_hands:
 
   
       
