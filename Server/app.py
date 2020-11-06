@@ -122,7 +122,6 @@ def predict():
         if index > 13:
             break
         temps.append(row[0])
-    #print(temps)
 
     param = "pr"
     resp = requests.get(url=URL)
@@ -136,7 +135,6 @@ def predict():
         if index > 13:
             break
         rainfall.append(row[0])
-    #print(rainfall)
 
     # Getting the current temperature (if Current=true in Input)
     current_weather_url = "http://api.openweathermap.org/data/2.5/weather?lat="+latitude +"&lon="+longitude +"&APPID=b9bb7acaa4566f8f7de584f90c2b12c2"
@@ -149,14 +147,14 @@ def predict():
 
     # Do the prediction here using Classifier clf.
     print(crop_season)
-    if(crop_season == 'kharif'):
-        nn_weight_path = '/home/sravanchittupalli/konnoha/clones/Lets_HackIT/Server/Models/weights/kharif_crops_final.pth'
-    elif(crop_season == 'rabi'):
-        nn_weight_path = '/home/sravanchittupalli/konnoha/clones/Lets_HackIT/Server/Models/weights/rabi_crops_final.pth'
-    elif(crop_season == 'zaid'):
-        nn_weight_path = '/home/sravanchittupalli/konnoha/clones/Lets_HackIT/Server/Models/weights/zaid_crops_final.pth'
+    if(crop_season == 'Kharif'):
+        nn_weight_path = '/home/sravanchittupalli/Lets_HackIT/Server/Models/weights/kharif_crops_final.pth'
+    elif(crop_season == 'Rabi'):
+        nn_weight_path = '/home/sravanchittupalli/Lets_HackIT/Server/Models/weights/rabi_crops_final.pth'
+    elif(crop_season == 'Zaid'):
+        nn_weight_path = '/home/sravanchittupalli/Lets_HackIT/Server/Models/weights/zaid_crops_final.pth'
     
-    production_weight_path = '/home/sravanchittupalli/konnoha/clones/Lets_HackIT/Server/Models/weights/production_weights.sav'
+    production_weight_path = '/home/sravanchittupalli/Lets_HackIT/Server/Models/weights/production_weights.sav'
 
     # get avg values
     temp_avg = get_avg(temps, predict_month)
@@ -182,8 +180,7 @@ def predict():
     soil = get_soil(soil_type)
 
     # Create parameter list
-    parameteres = torch.from_numpy(np.array([[temp_avg, ph, total_water, sow_temp, harvest_temp, nitrogen, potassium, phosphorous, soil[0], soil[1], soil[2], soil[3]]], dtype='float32'))
-    
+    parameteres = [[temp_avg, ph, total_water, sow_temp, harvest_temp, nitrogen, potassium, phosphorous, soil[0], soil[1], soil[2], soil[3]]]
 
     # create model instance
     nn_model = crop_model(crop_season)
@@ -232,7 +229,7 @@ def predict():
             }
         ]
     }
-    return jsonify(response)
+    return jsonify(response) # send to app
 
 
 if __name__ == '__main__':

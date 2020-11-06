@@ -8,22 +8,22 @@ crops = ["arhar/tur","bajra","barley","coriander","cotton_lint","cowpea_lobia","
 crops_rates = {"arhar/tur":6000,
 "bajra":2150,
 "barley":1600,
-"coriander":0,
+"coriander":400,
 "cotton_lint":5515,
-"cowpea_lobia":0,
-"dry_chillies":0,
-"garlic":0,
-"ginger":0,
+"cowpea_lobia":400,
+"dry_chillies":400,
+"garlic":400,
+"ginger":1400,
 "gram":4875,
 "groundnut":5275,
 "jowar":2640,
-"linseed":0,
+"linseed":540,
 "maize-k":1850,
-"maize-r":0,
+"maize-r":450,
 "masoor":4800,
 "moong_green_gram":7196,
 "onion":500,
-"peas_and_beans_pulses":0,
+"peas_and_beans_pulses":459,
 "potato":400,
 "ragi":3295,
 "rapeseed &mustard":4425,
@@ -64,12 +64,3 @@ class Production:
         for c in self.crop:
             self.prod_arr.append(self.single_production_price(c))
             self.display(c)
-
-# Crop Price Prediction
-crop = ['dry_chillies', 'coriander', 'onion']
-area = 200
-production_weight_path = '/home/sravanchittupalli/konnoha/clones/Lets_HackIT/Server/Models/weights/production_weights.sav'
-price_model = Production(crop, area, production_weight_path) 
-#calculate the production and price and also display
-price_model.calculate_production_price() 
-print(price_model.prod_arr)
