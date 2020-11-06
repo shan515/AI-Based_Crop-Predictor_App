@@ -77,8 +77,8 @@ def get_soil(soil_type):
         
 
 # AI/ML parameteres default
-nn_weight_path = 'Models/weights/kharif_crops_final.pth'
-production_weight_path = 'Models/weights/production_weights.sav'
+nn_weight_path = '/home/sravanchittupalli/konnoha/clones/Lets_HackIT/Server/Models/weights/kharif_crops_final.pth'
+production_weight_path = '/home/sravanchittupalli/konnoha/clones/Lets_HackIT/Server/Models/weights/production_weights.sav'
 
 @app.route('/', methods=['GET'])
 def index():
@@ -87,25 +87,24 @@ def index():
 
 @app.route('/predict', methods=['POST'])
 def predict():
-    content = request.json[0]
-    area = content['area']
-    potassium = content['potassium']
-    nitrogen = content['nitrogen']
-    phosphorous = content['phosphorous']
-    ph = content['ph']
-    crop_season = content['crop_season']
-    current_crop = content['current_planted_crop']
-    predict_month = content['predict_month']
-    is_current = content['is_current']
-    soil_type = content['soil_type']
+    area = request.form.get('area')
+    potassium = request.form.get('potassium')
+    nitrogen = request.form.get('nitrogen')
+    phosphorous = request.form.get('phosphorous')
+    ph = request.form.get('ph')
+    crop_season = request.form.get('crop_season')
+    current_crop = request.form.get('current_planted_crop')
+    predict_month = request.form.get('predict_month')
+    is_current = request.form.get('is_current')
+    soil_type = request.form.get('soil_type')
 
     # Use this API for finding data using latitudes and Longitudes
     # https://climateknowledgeportal.worldbank.org/api/data/get-download-data/projection/mavg/tas/rcp26/2020_2039/21.1458$cckp$79.0882/21.1458$cckp$79.0882
     # temps stores the predicted temperature
-    latitude = content['lat']
-    longitude = content['lng']
-    district = (content['district']).upper()
-    state = (content['state']).upper()
+    latitude = str(request.form.get('lat'))
+    longitude = str(request.form.get('lng'))
+    district = (request.form.get('district')).upper()
+    state = (request.form.get('state')).upper()
     
     param = "tas"
     URL = "https://climateknowledgeportal.worldbank.org/api/data/get-download-data/projection/mavg/"+ param +"/rcp26/2020_2039/" + \
@@ -123,7 +122,6 @@ def predict():
         if index > 13:
             break
         temps.append(row[0])
-    #print(temps)
 
     param = "pr"
     resp = requests.get(url=URL)
@@ -137,7 +135,6 @@ def predict():
         if index > 13:
             break
         rainfall.append(row[0])
-    #print(rainfall)
 
     # Getting the current temperature (if Current=true in Input)
     current_weather_url = "http://api.openweathermap.org/data/2.5/weather?lat="+latitude +"&lon="+longitude +"&APPID=b9bb7acaa4566f8f7de584f90c2b12c2"
@@ -151,13 +148,13 @@ def predict():
     # Do the prediction here using Classifier clf.
     print(crop_season)
     if(crop_season == 'Kharif'):
-        nn_weight_path = 'Models/weights/kharif_crops_final.pth'
+        nn_weight_path = '/home/sravanchittupalli/Lets_HackIT/Server/Models/weights/kharif_crops_final.pth'
     elif(crop_season == 'Rabi'):
-        nn_weight_path = 'Models/weights/rabi_crops_final.pth'
+        nn_weight_path = '/home/sravanchittupalli/Lets_HackIT/Server/Models/weights/rabi_crops_final.pth'
     elif(crop_season == 'Zaid'):
-        nn_weight_path = 'Models/weights/zaid_crops_final.pth'
+        nn_weight_path = '/home/sravanchittupalli/Lets_HackIT/Server/Models/weights/zaid_crops_final.pth'
     
-    production_weight_path = 'Models/weights/production_weights.sav'
+    production_weight_path = '/home/sravanchittupalli/Lets_HackIT/Server/Models/weights/production_weights.sav'
 
     # get avg values
     temp_avg = get_avg(temps, predict_month)
@@ -183,8 +180,7 @@ def predict():
     soil = get_soil(soil_type)
 
     # Create parameter list
-    parameteres = torch.from_numpy(np.array([[temp_avg, ph, total_water, sow_temp, harvest_temp, nitrogen, potassium, phosphorous, soil[0], soil[1], soil[2], soil[3]]], dtype='float32'))
-    
+    parameteres = [[temp_avg, ph, total_water, sow_temp, harvest_temp, nitrogen, potassium, phosphorous, soil[0], soil[1], soil[2], soil[3]]]
 
     # create model instance
     nn_model = crop_model(crop_season)
@@ -233,7 +229,7 @@ def predict():
             }
         ]
     }
-    return jsonify(response)
+    return jsonify(response) # send to app
 
 
 if __name__ == '__main__':
@@ -246,4 +242,4 @@ if __name__ == '__main__':
     max_area = pickle.load(f)
     f.close()
     
-    app.run(host="instance-flask-app2",port=int("5000"),debug=True) 
+    app.run()
