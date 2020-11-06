@@ -37,7 +37,7 @@ The problem statement focuses on promoting crop recomendation/rotating to help f
  - History  
    - List and information of previously grown crops   
    
- <img src="assets/input_page.jpeg" width="425"/>      <img src="assets/iot_page.jpeg" width="425"/>   
+ <img src="assets/input_page.jpeg" width="325"/>      <img src="assets/iot_page.jpeg" width="325"/>   
  
    
    
