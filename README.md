@@ -92,7 +92,7 @@ The problem statement focuses on promoting crop recomendation/rotating to help f
 
 ## Made with :heart: by:
 - [Sravan Chittupalli](https://github.com/SravanChittupalli) :smile:
-- [Shantanu Pande](https://github.com/shan515)  :smiley:
+- [Shantanu Pande](https://github.com/shan515)  :sleepy:
 - [Twisha Shah](https://github.com/high-functioning-sociopath) :innocent:
 - [Prithvi Shirke](https://github.com/prithvi1809)  :sunglasses:
 - [Khushal Shah](https://github.com/KhushalPShah) :raised_hands:
